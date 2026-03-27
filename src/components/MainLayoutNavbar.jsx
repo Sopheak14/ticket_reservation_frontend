@@ -1,24 +1,16 @@
-import Logo from "../../assets/Logo.png";
-import Arrow_right_circle from "../../assets/arrow-right-circle.png";
-import Notification from "../../assets/notification.png";
+import Logo from "../../src/assets/Logo1.png";
+import Arrow_right_circle from "../../src/assets/arrow_right_circle.png";
+import Notification from "../../src/assets/Notification.png";
 import { Link, Outlet } from "react-router-dom";
-import MainLayoutFooter from "./MainLayoutFooter";
 const NaMainLayoutNavbar = () => {
   return (
     <>
-      <header className="bg-[#211C84] text-white sticky top-0 z-10">
+      <header className="flex h-15 w-auto bg-[#211C84] sticky top-0 z-10">
         <section className="max-w-5xl mx-auto flex justify-between items-center">
-          <div>
-            <a>
-              <img
-                src={Logo}
-                alt="Logo"
-                className="h-12 w-auto md:h-14 lg:h-16"
-              />
-            </a>
-          </div>
-          <div className="flex space-x-3 md:[10px] lg:text-lg md:space-x-8">
-            <Link to="/">Home</Link>
+          <div className="flex space-x-3 md:[10px] lg:text-lg md:space-x-8 ">
+            <Link to="/" className="text-red-600">
+              Home
+            </Link>
             <Link to="/Search">Search Tickets</Link>
             <Link to="/Contact">Contact Us</Link>
             <Link to="/About">About Us</Link>
@@ -33,7 +25,6 @@ const NaMainLayoutNavbar = () => {
           </div>
         </section>
       </header>
-
     </>
   );
 };

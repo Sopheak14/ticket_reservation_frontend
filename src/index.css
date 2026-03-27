@@ -1,1 +1,23 @@
+/* index.css */
 @import "tailwindcss";
+/* remove default Ant Design overlay */
+.ant-menu-dark .ant-menu-item::after {
+  background: none !important;
+}
+
+/* hover effect */
+.ant-menu-dark .ant-menu-item:hover {
+  background-color: #3f3ba5 !important; /* dark purple like Figma */
+  color: #ffffff !important; /* text color on hover */
+}
+
+/* selected item */
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: #2e2b78 !important; /* darker purple */
+  color: #ffffff !important;
+}
+
+/* hover on selected */
+.ant-menu-dark .ant-menu-item-selected:hover {
+  background-color: #1f1d5f !important; /* slightly darker on hover */
+}
